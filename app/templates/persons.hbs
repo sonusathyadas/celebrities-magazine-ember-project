@@ -1,0 +1,11 @@
+<div class="row text-center">
+    <div class="col-sm mx-auto">
+        <h2>Celebrities</h2>
+    </div>
+</div>
+
+<ListFilter @filter={{action "filterByProfession"}} as |filteredResults|>
+    <PersonList @persons={{filteredResults}} />
+</ListFilter>
+
+{{outlet}}
